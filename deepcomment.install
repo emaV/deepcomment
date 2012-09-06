@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Install file for DeepComment
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function deepcomment_install() {
+  drupal_install_schema('deepcomment');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function deepcomment_uninstall() {
+  drupal_uninstall_schema('deepcomment');
+}
+
+/**
+ * Implementation of hook_schema().
+ */
+function deepcomment_schema() {
+
+  $schema['deepcomment'] = array(
+    'fields' => array(
+      'id' => array('type' => 'serial', 'unsigned' => TRUE, 'not null' => TRUE),
+      'cid'     => array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0),
+      'p_id' => array('type' => 'text', 'not null' => TRUE, 'default' => ''),
+    ),
+    'primary key' => array('id'),
+  );
+
+  return $schema;
+}

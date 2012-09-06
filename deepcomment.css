@@ -1,0 +1,98 @@
+.deepcomment.indent {
+  margin-left: 20px;
+  background-color: red;
+}
+
+.deepcomment-active {
+  background-color: yellow;
+}
+
+.deepcomment-view-dialog-comment {
+    cursor: pointer;
+    padding-left: 20px;
+    background-image: url('icons/comment_add.png');
+    background-repeat: no-repeat;
+}
+
+.deepcomment-comment-open-on-para {
+  cursor: pointer;
+  padding-left: 20px;
+    background-image: url('icons/comments.png');
+    background-repeat: no-repeat;
+}
+
+div.ui-dialog .deepcomment-comment-open-on-para {
+  display: none;
+}
+
+p.deepcomment-para {
+  min-height: 50px;
+}
+
+
+span.deepcomment-para-actions {
+  display:block;
+  float:left;
+  padding-right: 5px;
+}
+
+
+span.deepcomment-para-comment {
+  display: block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-image: url('icons/comment_add.png');
+  background-repeat: no-repeat;
+}
+
+span.deepcomment-para-view {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+    background-image: url('icons/comments.png');
+    background-repeat: no-repeat;
+}
+span.deepcomment-new {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding-left: 20px;
+  background-image: url('icons/new.png');
+  background-repeat: no-repeat;
+}
+div#deepcomment-comments {
+  width: 30%;
+}
+
+/* jQuery styling */
+
+.ui-dialog .ui-dialog-titlebar-close {
+  height: auto;
+  margin: 0;
+  width: auto;
+
+}
+
+div.ui-dialog {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  width: 550px;
+}
+
+div.ui-dialog-titlebar {
+  margin-bottom: 20px;
+}
+
+.ui-dialog .ui-dialog-title {
+  float: none;
+}
+
+span#ui-dialog-title-dialog {
+
+}
+
+
